@@ -103,6 +103,7 @@ class GooglePlaceApi {
                 $return = array('Error' => 'Something went wrong!');
             }
         }
-        return json_encode($return);
+        header('Content-Type: application/json');
+        echo json_encode($return);
     }
 }

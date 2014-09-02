@@ -48,8 +48,8 @@ class GooglePlaceApi {
     private $_apiKey = 'AIzaSyD0_tK6lSxzE_67pR-nzL6aY1doOqHX_e8';
 
     /**
-     * constructor - creates a GooglePlaceApi object,
-     * set content-type to application/json
+     * constructor - creates a GooglePlaceApi object
+     *
      *
      */
     public function __construct()

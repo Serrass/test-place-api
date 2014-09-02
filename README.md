@@ -5,5 +5,7 @@ link for class test
 <ul>
     <li>[your_localhost_name]/?query=burritos+in+Berlin</li>
     <li>[your_localhost_name]/?query=parks+in+Berlin</li>
+    <li>[your_localhost_name]/?query=burritos in Berlin</li>
+    <li>[your_localhost_name]/?query=parks in Berlin</li>
 </ul>
 

@@ -48,15 +48,6 @@ class GooglePlaceApi {
     private $_apiKey = 'AIzaSyD0_tK6lSxzE_67pR-nzL6aY1doOqHX_e8';
 
     /**
-     * constructor - creates a GooglePlaceApi object
-     *
-     *
-     */
-    public function __construct()
-    {
-    }
-
-    /**
      *  _curlCall Executes a curl call to the specified url with the specified data to post and returns the result.
      *
      * @return mixed
@@ -75,9 +66,9 @@ class GooglePlaceApi {
 
         return $body;
     }
-
     /**
-     * findPlaces formats the results
+     * findPlaces returns results of content type application/json
+     * from a get request submitted through the url
      *
      * @return string
      */
@@ -104,6 +95,6 @@ class GooglePlaceApi {
             }
         }
         header('Content-Type: application/json');
-        echo json_encode($return);
+        return json_encode($return);
     }
 }
